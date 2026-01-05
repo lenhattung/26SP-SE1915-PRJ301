@@ -36,10 +36,10 @@ ngoài các công cụ nêu trên (cho dù mở vô tình hay mở không sử d
 - Final Exam	Final exam	1	20.0%
 
 ## Cộng điểm
-– Java Servlet Development: From Basics to Real-World Projects Specialization
-– Địa chỉ: https://www.coursera.org/specializations/java-servlet-development-from-basics-to-real-world-projects
-– Sv tự học vì tương ứng với Learning outcome của môn học và hỗ trợ của GV (nếu SV yêu cầu) - 24h
-– Get certificate và deposit vào phần assignment	- PRJ30x 
+- Java Servlet Development: From Basics to Real-World Projects Specialization
+- Địa chỉ: https://www.coursera.org/specializations/java-servlet-development-from-basics-to-real-world-projects
+- Sv tự học vì tương ứng với Learning outcome của môn học và hỗ trợ của GV (nếu SV yêu cầu) - 24h
+- Get certificate và deposit vào phần assignment	- PRJ30x 
 - (đề xuất gợi ý 01 điểm Assignment - hay 20% tính trên tổng 100% của bài Assignment)
 - Deadline: cuối tuần 6.
 
