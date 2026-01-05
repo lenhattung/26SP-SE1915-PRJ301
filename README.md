@@ -43,3 +43,8 @@ ngoài các công cụ nêu trên (cho dù mở vô tình hay mở không sử d
 - (đề xuất gợi ý 01 điểm Assignment - hay 20% tính trên tổng 100% của bài Assignment)
 - Deadline: cuối tuần 6.
 
+# Videos:
+- 
+- 
+- 
+- 
