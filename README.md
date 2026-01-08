@@ -44,7 +44,7 @@ ngoài các công cụ nêu trên (cho dù mở vô tình hay mở không sử d
 - Deadline: cuối tuần 6.
 
 # Videos:
-- 
+- https://youtu.be/dE9rC-DpKeU
 - 
 - 
 - 
