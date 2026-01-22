@@ -32,6 +32,9 @@ public class MainController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+        
         String action = request.getParameter("action");
         String url = "login";
          
@@ -39,6 +42,8 @@ public class MainController extends HttpServlet {
             url = "LoginController";
         }else if(action.equals("logout")){
             url = "LogoutController";
+        }else if(action.equals("search")){
+            url = "SearchController";
         }
         
         // Chuyen trang
