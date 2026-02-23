@@ -100,7 +100,7 @@ public class AddUniversityController extends HttpServlet {
                 error += ("So nguyen duong phai la so nguyen!<br/>");
             }
             
-            boolean isDraft = (s_isDraft.equals("1"))?true:false;
+            boolean isDraft = (s_isDraft.equals("on"))?true:false;
             
             u = new UniversityDTO(id, name, shortName, description, foundedYear, address, city, region, type, totalStudents, totalFaculties, isDraft);
             if(error.isEmpty()){

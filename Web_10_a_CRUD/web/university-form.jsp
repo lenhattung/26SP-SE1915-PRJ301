@@ -4,24 +4,21 @@
     Author     : tungi
 --%>
 
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>University Form</title>
     </head>
     <body>
-        <!--    
-         private String id, name, shortName, description;
-         private int foundedYear;
-         private String address, city, region, type;
-         private int totalStudents, totalFaculties;
-         private boolean isDraft;
-        -->
         <form action="MainController" method="POST">
-            <input type="hidden" name="action" value="addUniversity"/>
-            ID: <input type="text" name="id" value="${u.id}" /> <br/>
+            <%-- Giữ lại action để Controller biết cần làm gì --%>
+            <input type="hidden" name="action" value="${mode=='update'?'saveUpdateUniversity':'addUniversity'}"/>
+
+            ID: <input type="text" name="id" value="${u.id}" ${mode == 'update' ? 'readonly' : ''} /> <br/>
+            
             Name: <input type="text" name="name" value="${u.name}" /> <br/>
             shortName: <input type="text" name="shortName" value="${u.shortName}" /> <br/>
             description: <input type="text" name="description" value="${u.description}" /> <br/>
@@ -32,9 +29,20 @@
             type: <input type="text" name="type" value="${u.type}" /> <br/>
             totalStudents: <input type="number" step="1" min="0" name="totalStudents" value="${u.totalStudents}" /> <br/>
             totalFaculties: <input type="number" step="1" min="0" name="totalFaculties" value="${u.totalFaculties}" /> <br/>
-            isDraft: <input type="checkbox" checked="${u.isDraft}" name="isDraft"/> <br/>
-            <input type="submit" value="Add"/>
+            
+            <%-- Xử lý checkbox isDraft --%>
+            isDraft: <input type="checkbox" ${u.isDraft ? 'checked' : ''} name="isDraft"/> <br/>
+
+            <c:choose>
+                <c:when test="${mode == 'update'}">
+                    <input type="submit" value="Update"/>
+                </c:when>
+                <c:otherwise>
+                    <input type="submit" value="Add"/>
+                </c:otherwise>
+            </c:choose>
         </form>
+
         <p style="color: green">${msg}</p>
         <p style="color: red">${error}</p>
     </body>
