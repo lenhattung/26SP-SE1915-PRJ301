@@ -44,7 +44,4 @@ ngoài các công cụ nêu trên (cho dù mở vô tình hay mở không sử d
 - Deadline: cuối tuần 6.
 
 # Videos:
-- https://youtu.be/dE9rC-DpKeU
-- 
-- 
-- 
+- https://youtu.be/dE9rC-DpKeU](https://drive.google.com/drive/folders/1z8L-Vroa6u3z1_6sEKw-V1CRhB9zsLOX?usp=sharing)
